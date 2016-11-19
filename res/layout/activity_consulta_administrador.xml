@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cp_presentacionapp.ConsultaAdministrador" >
+
+     <EditText
+         android:id="@+id/editfecha1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:ems="8"
+         android:hint="Ingreso"
+         android:inputType="date" />
+      
+     <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvHabitacionesConsAd"
+        android:background="#E0E0E0"
+        android:layout_marginTop="75dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+     <EditText
+         android:id="@+id/editfecha2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/lvHabitacionesConsAd"
+         android:layout_below="@+id/editfecha1"
+         android:ems="8"
+         android:hint="Salida"
+         android:inputType="date" >
+
+         <requestFocus />
+     </EditText>
+
+     <Button
+         android:id="@+id/btnActualizar"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/editfecha2"
+         android:layout_alignRight="@+id/lvHabitacionesConsAd"
+         android:layout_toRightOf="@+id/editfecha1"
+         android:background="#FF9800"
+         android:onClick="onClickActualizar"
+         android:text="COSULTAR" />
+
+</RelativeLayout>
