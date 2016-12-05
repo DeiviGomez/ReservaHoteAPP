@@ -58,7 +58,7 @@ public class ConsultaCliente extends Activity{
                 HttpClient httpclient = new DefaultHttpClient();
                 String fechainicio = mEditfecha1.getText().toString();
                 String fechafin = mEditfecha2.getText().toString();
-                HttpGet del = new HttpGet("http://192.168.1.226:8080/rest/restlistarHabDisponibles?diaEntrada="+fechainicio
+                HttpGet del = new HttpGet("http://13.68.210.51:8080/cp_presentacionREST/restlistarHabDisponibles?diaEntrada="+fechainicio
                 		+"&diaSalida="+fechafin);
 
                 del.setHeader("content-type", "application/json");

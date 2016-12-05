@@ -62,7 +62,7 @@ public class MainActivity extends Activity {
              String Usuario = et_usuario.getText().toString();
              String password = et_Password.getText().toString();
    
-             HttpGet del = new HttpGet("http://192.168.1.226:8080/rest/restverificaacceso?_Usuario="+
+             HttpGet del = new HttpGet("http://13.68.210.51:8080/cp_presentacionREST/restverificaacceso?_Usuario="+
              		Usuario+"&_Pass="+password);
 
              del.setHeader("content-type", "application/json");
